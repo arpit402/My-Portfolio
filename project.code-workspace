@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../java language 3rd"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}

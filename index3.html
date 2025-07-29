@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Pal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="mode-toggle" class="mode-toggle"></button>
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <div class="sidebar">
+        <img src="keyboard.jpg" alt="Coding Keyboard" class="sidebar-bg">
+        <div class="sidebar-content">
+            <h1>I'm ARPIT PAL</h1>
+            <p>Full Stack Web Developer & Problem Solver</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header class="main-header">
+            <div class="profile-intro">
+                <img src="pose.jpg" alt="Arpit Pal" class="profile-pic">
+                <div class="intro-text">
+                    <h1><span id="typewriter-text"></span></h1>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="social-links-header">
+                    <a href="mailto:palarpit129@gmail.com" target="_blank"><img src="email.png" alt="Email"></a>
+                    <a href="https://www.linkedin.com/in/arpit402" target="_blank"><img src="linkedin.jpg" alt="LinkedIn"></a>
+                    <a href="https://github.com/arpit402" target="_blank"><img src="github.jpg" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/me__arpitpal?igsh=b3B2eG0xODZ0ajY5" target="_blank"><img src="insta.png" alt="Instagram"></a>
+                </div>
+                <a href="arpit_pal_resumeC.pdf" download class="download-btn">Download Resume</a>
+            </div>
+        </header>
+
+        <section id="about" class="section fade-in">
+            <h2>About</h2>
+            <p>I am a B.Tech student in Computer Science Engineering with a passion for Backend and Full Stack Web Development. I enjoy solving problems and am currently focusing on Data Structures & Algorithms and OOPS.</p>
+        </section>
+
+        <section id="education" class="section fade-in">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>B.Tech in Computer Science Engineering</h3>
+                <p>Krishna Institute of Technology, Kanpur</p>
+                <p>Dr. A. P. J Abdul Kalam Technical University, Lucknow</p>
+                <p>July 2022-June 2026 | CGPA - 7.1</p>
+            </div>
+            <div class="education-item">
+                <h3>Class 12th</h3>
+                <p>Sardar Patel Academy Inter College, UP Board</p>
+                <p>Year-2019 | Percentage-60%</p>
+            </div>
+            <div class="education-item">
+                <h3>Class 10th</h3>
+                <p>Ekta Memorial H.S. School, UP Board</p>
+                <p>Year-2017 | Percentage-75%</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section fade-in">
+            <h2>Projects</h2>
+            <div class="project-card" data-modal-target="#calculator-modal">
+                <h3>Calculator Web App</h3>
+                <p>Created a basic calculator with a responsive UI using JavaScript. Supports basic arithmetic operations and deployed using GitHub Pages.</p>
+            </div>
+            <div class="project-card" data-modal-target="#portfolio-modal">
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a responsive personal portfolio using HTML, CSS, JavaScript. Included resume, skills, and project sections with interactive UI. Implemented dark/light mode and deployed on GitHub.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section fade-in">
+            <h2>Skills & Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Java (Core)</li>
+                        <li>C</li>
+                        <li>C++ (Basic)</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Concepts</h3>
+                    <ul>
+                        <li>Data Structures & Algorithms (Ongoing)</li>
+                        <li>OOPS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section fade-in">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Data Structures & Algorithms - RCPL Pvt. Ltd. (Sep 2024-Dec 2024)</li>
+                <li>Python Programming - RCPL Pvt. Ltd. (Oct 2023 - Dec 2023)</li>
+                <li>C Programming - Prutor @ IIT Kanpur (Jan 2023)</li>
+            </ul>
+        </section>
+
+        <section id="interests" class="section fade-in">
+            <h2>Areas of Interest</h2>
+            <ul>
+                <li>Backend Development | Full Stack Web Development</li>
+                <li>Data Structures & Algorithms | Problem Solving</li>
+            </ul>
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 Arpit Pal. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div class="modal" id="calculator-modal">
+        <div class="modal-header">
+            <h2 class="modal-title">Calculator Web App</h2>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>This is a fully functional web-based calculator that I built to practice my JavaScript skills. It handles basic arithmetic operations like addition, subtraction, multiplication, and division.</p>
+            <ul>
+                <li>**Tech Stack:** HTML, CSS, JavaScript</li>
+                <li>**Features:** Responsive design, all major arithmetic functions.</li>
+            </ul>
+            <a href="https://github.com/arpit402/Calculator" target="_blank" class="live-demo-btn">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="modal" id="portfolio-modal">
+        <div class="modal-header">
+            <h2 class="modal-title">Personal Portfolio Website</h2>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>My personal portfolio website to showcase my skills, projects, and educational background. This is the website you are currently viewing.</p>
+            <ul>
+                <li>**Tech Stack:** HTML, CSS, JavaScript</li>
+                <li>**Features:** Dark/Light mode, interactive animations, custom cursor, typewriter effect.</li>
+            </ul>
+            <a href="https://github.com/arpit402/Personal-Portfolio" target="_blank" class="live-demo-btn">View on GitHub</a>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
